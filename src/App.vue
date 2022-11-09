@@ -3,7 +3,8 @@ import AppHeader from './components/AppHeader.vue';
 import AppProducts from './components/AppProducts.vue';
 import AppFooter from './components/AppFooter.vue';
 import AppContents from './components/AppContents.vue';
-
+import AppBanner from './components/AppBanner.vue';
+import ProductList from './components/ProductList.vue';
 export default {
   data() {
     return {
@@ -14,12 +15,17 @@ export default {
     AppHeader,
     AppProducts,
     AppFooter,
-    AppContents
+    AppContents,
+    AppBanner,
+    ProductList
   }
-}</script>
+}
+</script>
 <template>
   <AppHeader />
-  <AppContents />
+  <AppBanner />
+  <ProductList />
+
   <AppProducts />
   <AppFooter />
 
